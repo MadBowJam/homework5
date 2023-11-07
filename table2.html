@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Table 2</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="global">
+  <div class="global-link-wrapper">
+    <a class="global-link" href="table1.html">Таблиця1</a>
+    <a class="global-link" href="table2.html">Таблиця2</a>
+  </div>
+
+  <table class="width-90">
+    <caption>Батьківська таблиця</caption>
+    <tr>
+      <td class="width-40" colspan="2">1-2</td>
+      <td class="width-60">3</td>
+    </tr>
+    <tr>
+      <td class="width-28">4</td>
+      <td colspan="2" rowspan="2">
+
+        <table class="width-80">
+          <caption>Вкладена таблиця</caption>
+          <tr>
+            <td>1</td>
+            <td rowspan="3">2-5-8</td>
+            <td rowspan="2" class="height-200">3-6</td>
+          </tr>
+          <tr>
+            <td rowspan="2" class="height-200">4-7</td>
+          </tr>
+          <tr>
+            <td>9</td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+    <tr>
+      <td class="width-28">7</td>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>
